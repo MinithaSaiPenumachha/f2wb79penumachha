@@ -6,6 +6,5 @@ block content
     
     div(class="container-fluid mt-3")
     div(class="row")
-        each tennis,index in tennis
-            div(class="col-sm-2 bg-primary m-1 p-3" style="color:Gray; background-color: #f1f1f1 ) #{tennis.Player_Name} - #{tennis.Player_Age} - #{tennis.No_Of_Matches_Played}
-   
+        each t,index in tennis
+            div(class="col-sm-2 bg-primary m-1 p-3" style="color:Gray; background-color: #f1f1f1 ) #{t.Player_Name} - #{t.Player_Age} - #{t.No_Of_Matches_Played} 
