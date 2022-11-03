@@ -9,10 +9,10 @@ block content
         each tennis,index in tennises
             div(class="col-sm-2 bg-primary m-1 p-3" onclick=`buy(${index})`) #{tennis.Player_Name} - #{tennis.Player_Age} - #{tennis.No_Of_Matches_Played}
 
-      script.
+    
+    script.
      
       function buy(itemNo)
       {
         alert(`You purchased Item ${itemNo+1}`)
       }
-   
