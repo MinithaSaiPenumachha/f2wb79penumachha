@@ -2,9 +2,9 @@ extends layout
 
 block content
   h1= title
-  - let tennis=[{Player_Name:"Roger Federer",Player_Age :"30",No_Of_Matches_Played:"4"},{Player_Name:"Rafael Nadal",Player_Age :"35",No_Of_Matches_Played:"5"},{Player_Name:"Andy Murray",Player_Age :"25",No_Of_Matches_Played:"6"}]
+  - let tennises=[{Player_Name:"Roger Federer",Player_Age :"30",No_Of_Matches_Played:"4"},{Player_Name:"Rafael Nadal",Player_Age :"35",No_Of_Matches_Played:"5"},{Player_Name:"Andy Murray",Player_Age :"25",No_Of_Matches_Played:"6"}]
     
     div(class="container-fluid mt-3")
     div(class="row")
-        each ten,index in tennis
-            div(class="col-sm-2 bg-primary m-1 p-3" style="color:Gray; background-color: #f1f1f1 ) #{ten.Player_Name} - #{ten.Player_Age} - #{ten.No_Of_Matches_Played} 
+        each tennis,index in tennises
+            div(class="col-sm-2 bg-primary m-1 p-3" style="color:Gray; background-color: #f1f1f1 ) #{tennis.Player_Name} - #{tennis.Player_Age} - #{tennis.No_Of_Matches_Played} 
